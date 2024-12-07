@@ -18,18 +18,18 @@ public class TaxaEstacionamento {
 		
 		System.out.print("Digite o nome do primeiro cliente: ");
 		String cliente1 = leia.nextLine();
-		leia.nextLine();
 		System.out.print("Qual a quantidade de horas que o cliente " + cliente1 + " usou o estacionamento: ");
 		int horasCliente1 = leia.nextInt();
 		System.out.printf("%s terá que pagar R$ %.2f", cliente1, calculateCharges(horasCliente1));
+		leia.nextLine();
 		
 		System.out.println();
 		System.out.print("Digite o nome do segundo cliente: ");
 		String cliente2 = leia.nextLine();
-		leia.nextLine();
 		System.out.print("Qual a quantidade de horas que o cliente " + cliente2 + " usou o estacionamento: ");
 		int horasCliente2 = leia.nextInt();
 		System.out.printf("%s terá que pagar R$ %.2f", cliente2, calculateCharges(horasCliente2));
+		leia.nextLine();
 	}
 	
 	public static double calculateCharges(int horas) {
